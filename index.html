@@ -9,28 +9,49 @@
 <body>
     <div class="content">
         <div class="card-container">
-            <img class="card-image" src="https://picsum.photos/450/450" alt="background pic">
+            <!-- <img class="card-image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e965ad139417717.623b8c55e8f4f.jpg"> -->
             <div class="card-body">
                 <p class="credit">credit</p>
             </div>
         </div>
         <div class="right-container">
             <header id="header">
-                <h2>This is not a real online service</h2>
+                <h2>This is not a real online service. Feel free to click on everything and change the size of the browser.</h2>
                 <h2>You know you want to.</h2>
             </header>
 
             <form action="submit">
             <h2>Let's do this</h2>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <div id="inputs">
+                <label for="first-name"></label>
+                <span>First Name</span>
+                <input type="text" name="first-name" required>
+
+                <span>Last Name</span>
+                <label for="last-name"></label>
+                <input type="text" name="last-name" required>
+            </div>
+            <div id="inputs">
+                <label for="email"></label>
+                <span>Email</span>
+                <input type="email" name="email" required>
+
+                <label for="number"></label>
+                <span>Phone Number</span>
+                <input type="tel" name="number" required>
+            </div>
+            <div id="inputs">
+                <label for="password"></label>
+                <span>Password</span>
+                <input type="password" name="password" required>
+
+                <label for="confirm-password"></label>
+                <span>Confirm Password</span>
+                <input type="password" name="confirm-password" required>
+            </div>
             </form>
             <footer id="footer">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
                 <p>Already have an account? Log in</p>
             </footer>
         </div>

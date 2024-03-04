@@ -1,19 +1,21 @@
+/* :root {
+	--header: 3rem;
+	--footer: 40px;
+	--main: calc(100vh - calc(var(--header) + var(--footer)));
+} */
+
+
 .content {
     display: flex;
-    
 }
 .card-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 60vw;
+    min-width: 350px;
+    min-height: 100vh;
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/e965ad139417717.623b8c55e8f4f.jpg");
+    background-size: cover;
 }
-
-.card-image {
-    width: 100%;
-    height: 100vh;
-    background-size: auto;
-    box-sizing: border-box;
-  }
 
 .card-body {
     position: absolute;
@@ -28,18 +30,28 @@
 }
 .right-container {
     display: flex;
+    flex-shrink: none;
     justify-content: center;
     flex-direction: column;
     background-color: azure;
+    max-width: 50vw;
+    min-width: 30vw;
+    /* height: var(--main); */
 }
 #header {
-	height: var(--header);
+	margin-bottom: 30px;
 }
 
 form {
     background-color: bisque;
 }
 
-#footer {
-    height: var(--footer);
+#name, #email-number, #password{
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
 }
+
+/* #footer {
+    height: var(--footer);
+} */
