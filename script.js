@@ -14,10 +14,11 @@ confirmPassword.addEventListener('input', () => {
 })
 
 submitButton.onclick = function() {
-    if (passwordValue === confirmPasswordValue) {
-        console.log('Passwords match!');
+    if (passwordValue != confirmPasswordValue) {
+        event.preventDefault(); // Prevent form from submitting
+        document.getElementById('password-error').textContent = 'Passwords do not match.'; // Display error message in HTML
     } else {
-        console.log('Passwords do not match.');
+        document.getElementById('password-error').textContent = ''; // Clear error message when passwords match
     }
 }
 

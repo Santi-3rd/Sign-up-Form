@@ -28,7 +28,6 @@
                         <label for="first-name"></label>
                         <span>First Name</span>
                         <input type="text" name="first-name" minlength="1">
-                        <!-- <div class="error"></div> -->
                     </div>
                     <div id="input-container">
                         <span>Last Name</span>
@@ -54,11 +53,12 @@
                         <label for="confirm-password"></label>
                         <span>Confirm Password</span>
                         <input type="password" name="confirm-password" id="confirm-password" required>
+                        <p id="password-error" style="color: red;"></p> 
                     </div>
                 </div>
                 <button type="submit" id="submit">Create Account</button>
-                <p>Already have an account? <span id="log-in">Log in</span></p>
             </form>
+            <p>Already have an account? <span id="log-in">Log in</span></p>
         </div>
     </div>
 </body>
