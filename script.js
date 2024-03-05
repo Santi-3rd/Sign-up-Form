@@ -3,6 +3,7 @@ const confirmPassword = document.querySelector('#confirm-password');
 const submitButton = document.querySelector('#submit')
 const requiredInputs = document.querySelectorAll('input[required]');
 const formContainer = document.querySelector('.form-container');
+const inputBorders = document.querySelector('#input-container')
 
 let passwordValue;
 let confirmPasswordValue;
@@ -24,12 +25,16 @@ submitButton.onclick = function() {
             if (!span.textContent.startsWith('*')) {
                 span.textContent = '*' + span.textContent;
             }
+            input.style.borderColor = 'red'
+        } else {
+            input.style.borderColor = '';
         }
     });
 
     if (!isFormFilled) {
         event.preventDefault();
         document.getElementById('field-error').textContent = 'Please fill out the required fields.';
+        console.log(inputBorders)
     } else {
         document.getElementById('field-error').textContent = '';
     }

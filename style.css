@@ -20,8 +20,9 @@ body {
     display: flex;
     position: relative;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
+    height: 15%;
+    background: #d6d8dba9;
+    color: black;
     top:3rem;
     text-align: center;
     font-size: 1.2em;
@@ -52,28 +53,30 @@ body {
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: rgba(0,21,29,255);
+    background-color: #5B534A; 
     width: 55vw;
 }
 #header {
 	margin-bottom: 30px;
+    margin-left: 20px;
 }
 
-form {
-    margin: 3px;
-}
+/* form {
+    margin: 75px;
+} */
 
 .form-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #5b8266;
-    border: 2px solid green;
-    box-shadow: 3px 3px 5px 3px rgba(0,21,29,255);
-    margin: 5px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: #0c342a;
+    /* border-radius: 10px; */
+    border-top: 8px solid #D6D8DB;
+    border-bottom: 8px solid #D6D8DB;
+    box-shadow: 4px 5px 25px 5px #262320d0;
+    margin: 1px;
+    padding: 15px
 }
 .form-container > h2 {
     width: 100%;
@@ -96,8 +99,25 @@ input:focus {
     box-shadow: 3px 3px 5px 3px rgba(0,21,29,255);
 }
 
+#submit{
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 24px;
+    background-color: #661B00;
+    border-color: #D6D8DB;
+    color: #D6D8DB;
+    border-radius: 10px;
+}
+
+#has-account {
+    margin-left: 24px;
+}
+
 #log-in {
-    color: lightgreen;
+    color: #e0afa0;
     
 }
 #log-in:hover {
