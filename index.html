@@ -27,12 +27,12 @@
                     <div id="input-container">
                         <label for="first-name"></label>
                         <span>First Name</span>
-                        <input type="text" name="first-name" minlength="1">
+                        <input type="text" minlength="1"   name="first-name" required>
                     </div>
                     <div id="input-container">
-                        <span>Last Name</span>
                         <label for="last-name"></label>
-                        <input type="text" name="last-name">
+                        <span>Last Name</span>
+                        <input type="text" minlength="1" name="last-name" required>
                     </div>
                     <div id="input-container">
                         <label for="email"></label>
@@ -42,19 +42,20 @@
                     <div id="input-container">
                         <label for="number"></label>
                         <span>Phone Number</span>
-                        <input type="tel" name="number" required>
+                        <input type="tel" name="number">
                     </div>
                     <div id="input-container">
                         <label for="password"></label>
                         <span>Password</span>
-                        <input type="password" id="password" name="password" required>
+                        <input type="password" id="password" name="password" minlength="8" required>
                     </div>
                     <div id="input-container">
                         <label for="confirm-password"></label>
                         <span>Confirm Password</span>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
-                        <p id="password-error" style="color: red;"></p> 
+                        <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
                     </div>
+                    <p id="field-error"></p>
+                    <p id="password-error"></p> 
                 </div>
                 <button type="submit" id="submit">Create Account</button>
             </form>
