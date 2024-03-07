@@ -38,7 +38,6 @@ body {
     justify-content: start;
     align-items: center;
 }
-
 .card-body > h1 {
     text-shadow: 3px 3px 8px rgb(97, 96, 96);
 }
@@ -103,7 +102,6 @@ body {
     flex-wrap: wrap;
     width: 40%;
 }
-
 #input-container > span {
     margin-left: 5px;
     font-size: 20px;
@@ -139,7 +137,6 @@ input:focus {
     color: #D6D8DB;
     border-radius: 10px;
 }
-
 #submit:hover {
     background-color: #cf3903;
 }
