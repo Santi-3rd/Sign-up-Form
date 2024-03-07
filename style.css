@@ -4,10 +4,17 @@
 }
 body {
     margin: 0;
+    background-color: #413c35;
 }
 
 .content {
     display: flex;
+    opacity: 0; 
+    transition: opacity 0.8s ease-in-out; 
+}
+
+.content.visible {
+    opacity: 1;
 }
 
 .card-container {
@@ -28,10 +35,12 @@ body {
     color: black;
     top: 3rem;
     font-size: 30px;
-    /* font-family: roboto; */
     justify-content: start;
     align-items: center;
-    
+}
+
+.card-body > h1 {
+    text-shadow: 3px 3px 8px rgb(97, 96, 96);
 }
 
 .logo {
@@ -57,6 +66,7 @@ body {
     flex-wrap: nowrap;
     background-color: #413c35; 
     width: 55vw;
+    border-radius: 25px;
 }
 #header {
 	margin-bottom: 30px;
@@ -147,4 +157,49 @@ input:focus {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px)  {}
+@media only screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+    .card-container {
+        width: 100vw;
+        min-width: 100vw;
+        background-position: 35% 45%;
+    }
+    .right-container {
+        width: 100vw;
+    }
+    #input-container {
+        width: 80%;
+    }
+    .form-container {
+        flex-direction: column;
+    }
+    .logo {
+        width: 20vw;
+    }
+    #title {
+        font-size: 30px;
+    }
+    #text {
+        font-size: 20px;
+    }
+    .card-body {
+        font-size: 20px;
+    }
+    .form-container > h2 {
+        font-size: 25px;
+    }
+    #input-container > span {
+        font-size: 15px;
+    }
+    #field-error, #password-error {
+        font-size: 15px;
+    }
+    input {
+        font-size: medium;
+    }
+    #submit{
+        font-size: 20px;
+    }
+}

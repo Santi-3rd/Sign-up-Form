@@ -8,6 +8,12 @@ const inputBorders = document.querySelector('#input-container')
 let passwordValue;
 let confirmPasswordValue;
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contentElement = document.querySelector('.content');
+    contentElement.classList.add('visible');
+});
+
 password.addEventListener('input', () => {
     passwordValue = password.value;
 })
